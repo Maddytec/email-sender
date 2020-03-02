@@ -1,0 +1,15 @@
+version: '3'
+volumes: 
+  dados:
+services:
+  db:
+    image: postgres
+    environment:
+      # Acesso ao banco sem autenticação
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - dados:/var/lib/postgresql/data
+      # Scripts executados na inicialização do container
+      - ./scripts:/scripts
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+  
