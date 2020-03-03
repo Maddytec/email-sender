@@ -20,6 +20,8 @@ services:
     # Site
     volumes: 
       - ./web:/usr/share/nginx/html/
+      #Configuração do proxy reverso
+      - ./app/proxy/default.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 80:80
   api:
@@ -29,5 +31,3 @@ services:
       - ./api:/api
     working_dir: /api
     command: bash ./api.sh
-    ports:
-      - 8080:8080
