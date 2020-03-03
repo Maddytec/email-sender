@@ -3,6 +3,7 @@ volumes:
   dados:
 services:
   db:
+    container_name: db_maddytec
     image: postgres
     environment:
       # Acesso ao banco sem autenticação
@@ -13,7 +14,8 @@ services:
       - ./scripts:/scripts
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
   
-  frontend:
+  app:
+    container_name: app_maddytec
     image: nginx:1.13
     # Site
     volumes: 
@@ -21,6 +23,7 @@ services:
     ports:
       - 80:80
   api:
+    container_name: api_maddytec
     image: python:3.6
     volumes: 
       - ./api:/api
