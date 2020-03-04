@@ -7,7 +7,6 @@ networks:
   rede_fila:
 services:
   db:
-    container_name: db_maddytec
     image: postgres
     environment:
       # Acesso ao banco sem autenticação
@@ -20,7 +19,6 @@ services:
     networks: 
       - rede_banco
   app:
-    container_name: app_maddytec
     image: nginx:1.13
     # Site
     volumes: 
@@ -34,7 +32,6 @@ services:
     depends_on: 
       - api
   api:
-    container_name: api_maddytec
     image: python:3.6
     volumes: 
       - ./api:/api
@@ -52,11 +49,11 @@ services:
     networks: 
       - rede_fila
   worker:
-    image: python:3.6
+    build: worker
     volumes: 
       - ./worker:/worker
     working_dir: /worker
-    command: bash ./api.sh
+    command: worker.py
     networks: 
       - rede_fila
     depends_on: 
