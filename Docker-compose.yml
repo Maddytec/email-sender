@@ -44,6 +44,10 @@ services:
     depends_on: 
       - db
       - queue
+    environment: 
+      - DB_NAME=email_sender
+      - DB_USER=postgres
+      - DB_HOST=db
   queue:
     image: redis:3.2
     networks: 
