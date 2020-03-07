@@ -2,17 +2,16 @@
 
 Microservices para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
 
-## Faça agora, por que na minha máquina funciona
+## Faça agora, por que na minha máquina funciona ;)
 1. [Baixar projeto](#1-baixar-projeto)
 2. [Inicializando os serviços](#2-inicializando-os-serviços)
 3. [Como testar o projeto?](#3-como-testar-o-projeto)
-3.1 [Tela de envio de mensagens:](#31---tela-de-envio-de-mensagens)
-3.2 [Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL](#32-consulta-das-mensagens-enviadas-no-item-anterior-e-persistidas-no-banco-de-dados-postgresql)
-3.3 [Replicando servidor de emails](#33-replicando-servidor-de-emails)
-3.4 [Log do consumo da fila Redis](#34-log-do-consumo-da-fila-redis)
+<br>3.1 [Tela de envio de mensagens:](#31---tela-de-envio-de-mensagens)
+<br>3.2 [Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL](#32-consulta-das-mensagens-enviadas-no-item-anterior-e-persistidas-no-banco-de-dados-postgresql)
+<br>3.3 [Replicando servidor de emails](#33-replicando-servidor-de-emails)
+<br>3.4 [Log do consumo da fila Redis](#34-log-do-consumo-da-fila-redis)
 4. [Remover os serviços](#4-remover-os-servi%C3%A7os)
-
-[5. Licença](#5-licença)
+5. [Licença](#5-licença)
 
 
 Requisitos necessários para prosseguir :
