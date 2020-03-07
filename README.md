@@ -6,7 +6,7 @@ Microservices para envio de emails com frontend em Bootstrap, backend em Python,
 1. [Baixar projeto](#1-baixar-projeto)
 2. [Inicializando os serviços](#2-inicializando-os-serviços)
 3. [Como testar o projeto?](#3-como-testar-o-projeto)
-<br>3.1 [Tela de envio de mensagens:](#31---tela-de-envio-de-mensagens)
+<br>3.1 [Tela de envio de mensagens](#31---tela-de-envio-de-mensagens)
 <br>3.2 [Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL](#32-consulta-das-mensagens-enviadas-no-item-anterior-e-persistidas-no-banco-de-dados-postgresql)
 <br>3.3 [Replicando servidor de emails](#33-replicando-servidor-de-emails)
 <br>3.4 [Log do consumo da fila Redis](#34-log-do-consumo-da-fila-redis)
@@ -40,7 +40,7 @@ Requisitos necessários para prosseguir :
 
 Após executar o item 2:
   
-### 3.1 - Tela de envio de mensagens:
+### 3.1 - Tela de envio de mensagens
 
  - Acessar a URL: [http://localhost](http://localhost) para visualizar a pagina disponibilizada referente ao frontend
 
@@ -48,6 +48,7 @@ Após executar o item 2:
 <br>Figura 2 - Tela de envio de  mensagens
   
 ### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
+- Comando para cosultar as mensagens da tabela emails no banco email_sender e com usuario postgres  
 `$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
 
 ![Mensagens persistidas](image/select.png)
