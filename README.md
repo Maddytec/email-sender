@@ -38,7 +38,7 @@ Requisitos necessários para prosseguir :
 `$ docker-compose ps`
 
 ![Figura 1 - Retorno do comando docker-compose ps](image/ps.png)
-Figura 1 - Retorno do comando docker-compose ps
+<br>Figura 1 - Retorno do comando docker-compose ps
 
 ## 3. Como testar o projeto?
 
@@ -49,7 +49,7 @@ Após executar o item 2:
  - Acessar a URL: [http://localhost](http://localhost) para visualizar a pagina disponibilizada referente ao frontend
 
 ![Figura 2 - Tela de envio de mensagem](image/mensagem.png)
- Figura 2 - Tela de envio de  mensagens
+<br>Figura 2 - Tela de envio de  mensagens
   
 ### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
 
@@ -69,16 +69,14 @@ Após executar o item 2:
 `docker-compose ps`    
 
 ![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
-
-Figura 4 - Retorno do comando docker-compose ps
+<br>Figura 4 - Retorno do comando docker-compose ps
 
 ## 3.4 Log do consumo da fila Redis
 - Comando para acompanhar o log dos servidores de emails consumindo a fila
 
 `$ docker-compose logs -f -t server_email` 
   ![Figura 5 - Retorno do comando](image/log.png)
-
-Figura 5 - Exemplo de log dos servidores de emails
+<br>Figura 5 - Exemplo de log dos servidores de emails
  
 ## 4. Remover os serviços
 - Comando para parar os serviços:
