@@ -1,6 +1,18 @@
-# email-sender
+# Email Sender
 
 Microservices para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
+
+## Faça agora, por que na minha máquina funciona
+[1. Baixar projeto](#1-baixar-projeto)
+[2. Inicializando os serviços](#2-inicializando-os-serviços)
+[3. Como testar o projeto?](#3-como-testar-o-projeto)
+- [3.1 - Tela de envio de mensagens:](#31---tela-de-envio-de-mensagens)
+- [3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL](#32-consulta-das-mensagens-enviadas-no-item-anterior-e-persistidas-no-banco-de-dados-postgresql)
+- [3.3 Replicando servidor de emails](#33-replicando-servidor-de-emails)
+- [3.4 Log do consumo da fila Redis](#34-log-do-consumo-da-fila-redis)
+[ 4. Remover os serviços](#4-remover-os-servi%C3%A7os)
+[5. Licença](#licen%C3%A7a)
+
 
 Requisitos necessários para prosseguir :
 *  [Git](https://git-scm.com/downloads)
@@ -33,13 +45,13 @@ Após executar o item 2:
 ![Figura 2 - Tela de envio de mensagem](image/mensagem.png)
  Figura 2 - Tela de envio de  mensagens
   
-### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL:
+### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
 
 `$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
 ![Mensagens persistidas](image/select.png)
   Figura 3 - Mensagens persistidas
 
-## 3.3 Replicando servidor de emails:
+## 3.3 Replicando servidor de emails
 - Comando para replicar o serviço de emails:
 `$ docker-compose up -d --scale server_email=3`
 
@@ -61,6 +73,6 @@ Figura 5 - Exemplo de log dos servidores de emails
 - Comando para remover os serviços:
 `$ docker-compose rm`
 
-## 5. License
+## 5. Licença
 
-Este código é open source.
+Este código é open source (código aberto).
