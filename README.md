@@ -11,7 +11,8 @@ Microservices para envio de emails com frontend em Bootstrap, backend em Python,
 - [3.3 Replicando servidor de emails](#33-replicando-servidor-de-emails)
 - [3.4 Log do consumo da fila Redis](#34-log-do-consumo-da-fila-redis)
 [ 4. Remover os serviços](#4-remover-os-servi%C3%A7os)
-[5. Licença](#licen%C3%A7a)
+
+[5. Licença](#5-licença)
 
 
 Requisitos necessários para prosseguir :
@@ -21,13 +22,16 @@ Requisitos necessários para prosseguir :
 
 ## 1. Baixar projeto
 - No console do seu sistema operacional execute o comando: 
+
 `$ git clone https://github.com/Maddytec/email-sender.git`
  
 
 ## 2. Inicializando os serviços
 
  - Comandos para iniciar os serviços:
+
 `$ cd email-sender`
+
 `$ docker-compose up -d`
 
 - Comando para listar os serviços:
