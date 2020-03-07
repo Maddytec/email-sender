@@ -1,6 +1,9 @@
 # Email Sender
 
-Microservices para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
+Microservices utilizando docker compose para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
+
+![Figura 1 - Container](image/container.png)
+<br>Figura 1 - Containers 
 
 ## Faça agora, por que na minha máquina funciona ;)
 1. [Baixar projeto](#1-baixar-projeto)
@@ -33,8 +36,8 @@ Requisitos necessários para prosseguir :
 - Comando para listar os serviços:
 <br>`$ docker-compose ps`
 
-![Figura 1 - Retorno do comando docker-compose ps](image/ps.png)
-<br>Figura 1 - Retorno do comando docker-compose ps
+![Figura 2 - Retorno do comando docker-compose ps](image/ps.png)
+<br>Figura 2 - Retorno do comando docker-compose ps
 
 ## 3. Como testar o projeto?
 
@@ -44,15 +47,15 @@ Após executar o item 2:
 
  - Acessar a URL: [http://localhost](http://localhost) para visualizar a pagina disponibilizada referente ao frontend
 
-![Figura 2 - Tela de envio de mensagem](image/mensagem.png)
-<br>Figura 2 - Tela de envio de  mensagens
+![Figura 3 - Tela de envio de mensagem](image/mensagem.png)
+<br>Figura 3 - Tela de envio de  mensagens
   
 ### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
 - Comando para cosultar as mensagens da tabela emails no banco email_sender e com usuario postgres  
 `$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
 
-![Mensagens persistidas](image/select.png)
-<br>Figura 3 - Mensagens persistidas
+![Figura 4 - Mensagens persistidas](image/select.png)
+<br>Figura 4 - Mensagens persistidas
 
 ## 3.3 Replicando servidor de emails
 - Comando para replicar o serviço de emails:
@@ -61,15 +64,15 @@ Após executar o item 2:
 - Comando para verificar os serviços disponíveis
 <br>`docker-compose ps`    
 
-![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
-<br>Figura 4 - Retorno do comando docker-compose ps
+![Figura 5 - Retorno do comando docker-compose ps](image/emails.png)
+<br>Figura 5 - Retorno do comando docker-compose ps
 
 ## 3.4 Log do consumo da fila Redis
 - Comando para acompanhar o log dos servidores de emails consumindo a fila
 <br>`$ docker-compose logs -f -t server_email` 
 
-![Figura 5 - Retorno do comando](image/log.png)
-<br>Figura 5 - Exemplo de log dos servidores de emails
+![Figura 6 - Retorno do comando](image/log.png)
+<br>Figura 6 - Exemplo de log dos servidores de emails
  
 ## 4. Remover os serviços
 - Comando para parar os serviços:
