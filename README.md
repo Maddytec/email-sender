@@ -49,8 +49,8 @@ Após executar o item 2:
   
 ### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
 `$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
-<br>![Mensagens persistidas](image/select.png)
 
+![Mensagens persistidas](image/select.png)
 <br>Figura 3 - Mensagens persistidas
 
 ## 3.3 Replicando servidor de emails
@@ -60,14 +60,14 @@ Após executar o item 2:
 - Comando para verificar os serviços disponíveis
 <br>`docker-compose ps`    
 
-<br>![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
+![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
 <br>Figura 4 - Retorno do comando docker-compose ps
 
 ## 3.4 Log do consumo da fila Redis
 - Comando para acompanhar o log dos servidores de emails consumindo a fila
 <br>`$ docker-compose logs -f -t server_email` 
 
-<br>![Figura 5 - Retorno do comando](image/log.png)
+![Figura 5 - Retorno do comando](image/log.png)
 <br>Figura 5 - Exemplo de log dos servidores de emails
  
 ## 4. Remover os serviços
