@@ -21,21 +21,17 @@ Requisitos necessários para prosseguir :
 
 ## 1. Baixar projeto
 - No console do seu sistema operacional execute o comando: 
-
-`$ git clone https://github.com/Maddytec/email-sender.git`
+<br>`$ git clone https://github.com/Maddytec/email-sender.git`
  
 
 ## 2. Inicializando os serviços
 
  - Comandos para iniciar os serviços:
-
-`$ cd email-sender`
-
-`$ docker-compose up -d`
+<br>`$ cd email-sender`
+<br> `$ docker-compose up -d`
 
 - Comando para listar os serviços:
-
-`$ docker-compose ps`
+<br>`$ docker-compose ps`
 
 ![Figura 1 - Retorno do comando docker-compose ps](image/ps.png)
 <br>Figura 1 - Retorno do comando docker-compose ps
@@ -52,40 +48,31 @@ Após executar o item 2:
 <br>Figura 2 - Tela de envio de  mensagens
   
 ### 3.2 Consulta das mensagens enviadas no item anterior e persistidas no banco de dados PostgreSQL
-
-`$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
-
-![Mensagens persistidas](image/select.png)
-  
- Figura 3 - Mensagens persistidas
+<br>`$ docker-compose exec db psql -U postgres -d email_sender -c "select * from emails"`
+<br>![Mensagens persistidas](image/select.png)
+<br>Figura 3 - Mensagens persistidas
 
 ## 3.3 Replicando servidor de emails
 - Comando para replicar o serviço de emails:
-
-`$ docker-compose up -d --scale server_email=3`
+<br>`$ docker-compose up -d --scale server_email=3`
 
 - Comando para verificar os serviços disponíveis
-
-`docker-compose ps`    
-
-![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
+<br>`docker-compose ps`    
+<br>![Figura 4 - Retorno do comando docker-compose ps](image/emails.png)
 <br>Figura 4 - Retorno do comando docker-compose ps
 
 ## 3.4 Log do consumo da fila Redis
 - Comando para acompanhar o log dos servidores de emails consumindo a fila
-
-`$ docker-compose logs -f -t server_email` 
-  ![Figura 5 - Retorno do comando](image/log.png)
+<br>`$ docker-compose logs -f -t server_email` 
+<br>![Figura 5 - Retorno do comando](image/log.png)
 <br>Figura 5 - Exemplo de log dos servidores de emails
  
 ## 4. Remover os serviços
 - Comando para parar os serviços:
-
-`$ docker-compose stop`
+<br>`$ docker-compose stop`
 
 - Comando para remover os serviços:
-
-`$ docker-compose rm`
+<br>`$ docker-compose rm`
 
 ## 5. Licença
 
