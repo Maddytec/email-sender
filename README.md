@@ -2,8 +2,8 @@
 
 Microservices utilizando docker compose para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
 
-![Figura 1 - Container](image/container.png)
-<br>Figura 1 - Containers 
+![Figura 1 - Container](image/containers.png)
+<br>Figura 1 - Containers com suas respectivas tecnologias e conexões de rede
 
 ## Faça agora, por que na minha máquina funciona ;)
 1. [Baixar projeto](#1-baixar-projeto)
