@@ -15,9 +15,9 @@ Microservices para envio de emails com frontend em Bootstrap, backend em Python,
 
 
 Requisitos necessários para prosseguir :
-*  [Git](https://git-scm.com/downloads)
-*  [Docker](https://docs.docker.com/get-docker/)
-*  [Docker Compose](https://docs.docker.com/compose/install/)
+* <a href="https://git-scm.com/downloads" target="_blank">Git</a>
+* <a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a>
+* <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a>
 
 ## 1. Baixar projeto
 - No console do seu sistema operacional execute o comando: 
