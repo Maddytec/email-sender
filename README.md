@@ -8,7 +8,7 @@ Microservices utilizando docker compose para envio de emails com frontend em Boo
 
 ## Faça agora, por que na minha máquina funciona ;)
 1. [Baixar projeto](#1-baixar-projeto)
-<br>1.1 [Detalhe inicial do projeto](#11-detalhe-inicial-do-projeto)
+<br>1.1 [Detalhe inicial do projeto](#11--detalhe-inicial-do-projeto)
 <br>1.2 [Configuração do Servidor de E-mail server](#12-configuração-do-servidor-de-e-mail)
 2. [Inicializando os serviços](#2-inicializando-os-serviços)
 3. [Como testar o projeto?](#3-como-testar-o-projeto)
