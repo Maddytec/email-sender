@@ -8,9 +8,8 @@ Microservices utilizando docker compose para envio de emails com frontend em Boo
 
 ## Faça agora, por que na minha máquina funciona ;)
 1. [Baixar projeto](#1-baixar-projeto)
-<br>1.1 [Apenas simular o envio de E-mail]( #21-para-apenas-simular-o-envio-de-e-mail-siga-para-passo-23)
-<br>1.2 [Simular envio de email]( #12-para-envio-de-emails-é-necessário-a-configuração-das-variáveis-de-nosso-servidor-de-e-mail-server_email)
-<br>2.3 [Simular envio de email]( #21-para-apenas-simular-o-envio-de-e-mail-siga-para-passo-23)
+<br>1.1 [Detalhe inicial do projeto](#11-detalhe-inicial-do-projeto)
+<br>1.2 [Configuração do Servidor de E-mail server](#12-configuração-do-servidor-de-e-mail)
 2. [Inicializando os serviços](#2-inicializando-os-serviços)
 3. [Como testar o projeto?](#3-como-testar-o-projeto)
 <br>3.1 [Tela de envio de mensagens](#31---tela-de-envio-de-mensagens)
@@ -29,9 +28,9 @@ Requisitos necessários para prosseguir :
 ## 1. Baixar projeto
 - No console do seu sistema operacional execute o comando: 
 <br>`$ git clone https://github.com/Maddytec/email-sender.git`
-### 1.1 Apenas simular o envio de E-mail siga para passo 2
-
-### 1.2 Configuração do Servidor de Email server_email  
+### 1.1  Detalhe inicial do projeto
+- Para apenas simular o envio de E-mail siga para passo 2
+### 1.2 Configuração do Servidor de E-mail  
 - Para envio de emails é necessário a configuração das variáveis de nosso servidor de E-mail. Desta forma, substitua os valores atribuídos as variáveis EMAIL, PASSWORD, EMAIL_SERVER e PORT_EMAIL_SERVER  encontradas no arquivo Docker-compose.override.yml pelos respectivos valores do servidor de E-mail de sua escolha.
 -  Caso o servidor de E-mail escolhido seja Gmail, o Google, à princípio, não vai permitir realizar o login, Para resolver isso, vá em [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps) enquanto estiver logado na sua conta Google, e mude para "ON" a oção de "Allow less secure apps". Não esqueça, no final dos teste desabilite novamente o recurso.
  
