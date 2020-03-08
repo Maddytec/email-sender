@@ -5,3 +5,9 @@ services:
       - DB_NAME=email_sender
       - DB_USER=postgres
       - DB_HOST=db
+  server_email:
+    environment: 
+      - EMAIL=conta_email@dominio.com.br
+      - PASSWORD=senha_conta_email
+      - EMAIL_SERVER=smtp.gmail.com
+      - PORT_EMAIL_SERVER=587
