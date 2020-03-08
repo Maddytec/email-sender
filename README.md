@@ -29,9 +29,11 @@ Requisitos necessários para prosseguir :
  
 
 ## 2. Inicializando os serviços
-### 2.1 Para simular o envio de e-mail siga para passo 2.3
+### 2.1 Para apenas simular o envio de E-mail siga para passo 2.3
 
-### 2.2 Para envio de emails é necessário a configuração das variáveis EMAIL, PASSWORD, EMAIL_SERVER e PORT_EMAIL_SERVER do server_email encontrado no Docker-compose.override.yml e caso o servidor de E-mail escolhido seja Gmail, o Google, à princípio, não vai permitir realizar o login, Para resolver isso, vá em [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps) enquanto estiver logado na sua conta Google, e mude para "ON" a oção de "Allow less secure apps".   
+### 2.2 Para envio de emails é necessário a configuração das variáveis de nosso servidor de E-mail server_email  
+- Substitua os valores atribuídos as variáveis EMAIL, PASSWORD, EMAIL_SERVER e PORT_EMAIL_SERVER  encontradas no arquivo Docker-compose.override.yml pelos respectivos valores do servidor de E-mail de sua escolha.
+-  Caso o servidor de E-mail escolhido seja Gmail, o Google, à princípio, não vai permitir realizar o login, Para resolver isso, vá em [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps) enquanto estiver logado na sua conta Google, e mude para "ON" a oção de "Allow less secure apps". Não esqueça, no final dos teste desabilite novamente o recurso.  
 
 ### 2.3 Comandos iniciais
  - Comandos para iniciar os serviços:
