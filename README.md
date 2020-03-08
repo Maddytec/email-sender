@@ -1,3 +1,4 @@
+
 # Email Sender
 
 Microservices utilizando docker compose para envio de emails com frontend em Bootstrap, backend em Python, banco PostrgreSQL e fila com Redis.
@@ -28,7 +29,11 @@ Requisitos necessários para prosseguir :
  
 
 ## 2. Inicializando os serviços
+### 2.1 Para simular o envio de e-mail siga para passo 2.3
 
+### 2.2 Para envio de emails é necessário a configuração das variáveis EMAIL, PASSWORD, EMAIL_SERVER e PORT_EMAIL_SERVER do server_email encontrado no Docker-compose.override.yml e caso o servidor de E-mail escolhido seja Gmail, o Google, à princípio, não vai permitir realizar o login, Para resolver isso, vá em [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps) enquanto estiver logado na sua conta Google, e mude para "ON" a oção de "Allow less secure apps".   
+
+### 2.3 Comandos iniciais
  - Comandos para iniciar os serviços:
 <br>`$ cd email-sender`
 <br> `$ docker-compose up -d`
@@ -43,7 +48,7 @@ Requisitos necessários para prosseguir :
 
 Após executar o item 2:
   
-### 3.1 - Tela de envio de mensagens
+### 3.1 Tela de envio de mensagens
 
  - Acessar a URL: [http://localhost](http://localhost) para visualizar a pagina disponibilizada referente ao frontend
 
